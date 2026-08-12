@@ -1,0 +1,4 @@
+interface:
+  display_name: "UnrealCV Runtime MCP"
+  short_description: "Inspect and control UnrealZoo runtimes"
+  default_prompt: "Use $unrealcv-runtime-mcp to inspect the running UnrealZoo scene and report the relevant runtime state."

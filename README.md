@@ -14,6 +14,7 @@ Start an UnrealZoo environment that provides Runtime MCP, then run:
 ```powershell
 python .\examples\runtime_mcp_client.py --host 127.0.0.1 --port 29998 tools
 python .\examples\runtime_mcp_client.py call scene.overview --arguments '{"radius":2500,"max_actors":20}'
+python .\examples\runtime_mcp_client.py call perception.snapshot --arguments '{"radius_cm":2500,"max_objects":24,"max_rays":8}'
 python .\examples\runtime_mcp_client.py exec "vget /unrealcv/status"
 ```
 
@@ -27,6 +28,10 @@ The reusable Codex skill is in
 [`skills/unrealcv-runtime-mcp`](skills/unrealcv-runtime-mcp/SKILL.md). Install
 that directory in your Codex skills folder, then invoke
 `$unrealcv-runtime-mcp` for runtime inspection and command execution.
+
+Use [`skills/unrealcv-generate-scene`](skills/unrealcv-generate-scene/SKILL.md)
+to generate an asset-backed scene from a description and world coordinate,
+prevent generated-object overlap, and return a six-view visual evaluation.
 
 ## Availability
 

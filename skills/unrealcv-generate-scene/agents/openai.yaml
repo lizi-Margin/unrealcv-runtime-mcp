@@ -1,0 +1,4 @@
+interface:
+  display_name: "UnrealCV Generate Scene"
+  short_description: "Generate and validate Unreal runtime scenes"
+  default_prompt: "Use $unrealcv-generate-scene to generate a validated Unreal scene from this description and world coordinate."

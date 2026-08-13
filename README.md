@@ -7,6 +7,34 @@ The Runtime MCP server is currently distributed with supported UnrealZoo
 environments and is tested there first. This repository does not contain the
 server's Unreal Engine C++ implementation.
 
+## Scene Generation In Action
+
+Given a natural-language brief and a world coordinate, an agent can raycast to
+the ground, inspect native scene state, search assets and bounds, spawn and
+settle assets without overlaps, then return an auditable six-view result. This
+is a real Runtime MCP run in the Tokyo environment: a bench, table, and traffic
+cone were added to a street-side rest point and validated before capture.
+
+![Generated street-side rest point](examples/scene_generation_demo/images/06_hero_view.png)
+
+| Top-down evaluation | X+ diagonal evaluation | X- diagonal evaluation |
+| --- | --- | --- |
+| ![Top-down evaluation](examples/scene_generation_demo/images/01_top_down.png) | ![X positive diagonal evaluation](examples/scene_generation_demo/images/02_x_positive_down_45.png) | ![X negative diagonal evaluation](examples/scene_generation_demo/images/03_x_negative_down_45.png) |
+| Y+ diagonal evaluation | Y- diagonal evaluation | |
+| ![Y positive diagonal evaluation](examples/scene_generation_demo/images/04_y_positive_down_45.png) | ![Y negative diagonal evaluation](examples/scene_generation_demo/images/05_y_negative_down_45.png) | |
+
+The full tool audit, asset paths, bounds, ground hit, placement validation, and
+capture provenance are recorded in
+[`examples/scene_generation_demo/manifest.json`](examples/scene_generation_demo/manifest.json).
+Captures use MQRC at **640x360** by default, capped at **1280x720**, so visual
+checks remain useful without needlessly expanding an agent's image context.
+
+Reproduce the demo against a running supported environment:
+
+```powershell
+python .\examples\scene_generation_demo\run_demo.py
+```
+
 ## Quick start
 
 Start an UnrealZoo environment that provides Runtime MCP, then run:

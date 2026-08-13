@@ -24,7 +24,9 @@ and required final result.
    unsuitable surface. Use the hit point as the local scene anchor.
 4. Move to a `top_down` view at a distance derived from the largest planned
    object. Call `perception.snapshot`, `scene.check_region`, and one top-down
-   capture before changing the scene. Reject a blocked region that cannot be
+   MQRC capture before changing the scene. Accept it only when the capture
+   metadata reports `render_source=mqrc`, `uses_base_camera_sensor=false`, and
+   the requested actual resolution. Reject a blocked region that cannot be
    resolved within three candidate offsets.
 5. For each planned object, search assets with `limit` at most 30, inspect
    candidate bounds, choose a placement that preserves clearance from all
@@ -35,7 +37,8 @@ and required final result.
    object. Do not remove actors that predated this workflow.
 7. After all objects exist, capture the six required views. Reframe and recapture
    when the camera is inside geometry, the target is absent, or framing is not
-   useful. Allow at most three capture attempts per view.
+   useful. Use MQRC at 640x360 by default (1280x720 maximum) and allow at most
+   three capture attempts per view.
 8. Inspect all six images plus structured placement results. Report failure for
    missing actors, wrong count, major penetration, floating or buried objects,
    or unresolved camera clipping.
@@ -49,6 +52,10 @@ and required final result.
 - Never accept an overlap with another workflow-generated actor.
 - Never claim success from a command response alone; validate placement and the
   six final images.
+- Never use a `UBaseCameraSensor` subclass for evaluation images. Call
+  `scene.capture_view` only with `source=mqrc` or `source=viewport`; reject any
+  response whose metadata does not explicitly report
+  `uses_base_camera_sensor=false`.
 - Keep searches and perception results bounded. Do not dump unlimited assets or
   scene actors into context.
 - Stop with an actionable error after bounded retries instead of silently

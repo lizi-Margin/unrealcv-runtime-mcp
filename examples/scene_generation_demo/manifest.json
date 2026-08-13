@@ -1,0 +1,3604 @@
+{
+  "schema_version": "unrealcv.scene_generation_audit.v1",
+  "status": "success",
+  "created_at": "2026-08-13T09:31:59.422490+00:00",
+  "scene_description": "Create a small Tokyo street-side rest point with one bench, one table, and one traffic cone, all grounded and mutually non-overlapping.",
+  "input_coordinate_cm": {
+    "x": -4500.0,
+    "y": -500.0,
+    "z": 2000.0
+  },
+  "world": {
+    "name": "Tokyo",
+    "path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo"
+  },
+  "generation_route": "asset_spawn",
+  "capture_policy": {
+    "allowed": [
+      "mqrc",
+      "main_viewport_backbuffer"
+    ],
+    "used": "mqrc",
+    "uses_base_camera_sensor": false,
+    "resolution": [
+      640,
+      360
+    ],
+    "max_resolution": [
+      1280,
+      720
+    ]
+  },
+  "runtime_tool_count": 23,
+  "camera_pose_before": {
+    "location": {
+      "x": -4500,
+      "y": -500,
+      "z": 632.2835693359375
+    },
+    "rotation": {
+      "pitch": 270.0999984741211,
+      "yaw": 0,
+      "roll": 0
+    },
+    "forward": {
+      "x": 0.0017453017343278224,
+      "y": 0,
+      "z": -0.9999984769597683
+    },
+    "fov_degrees": 90
+  },
+  "ground": {
+    "hit": true,
+    "start": {
+      "x": -4500,
+      "y": -500,
+      "z": 2000
+    },
+    "location": {
+      "x": -4499.999994134679,
+      "y": -500.00000598377426,
+      "z": 32.283599115408464
+    },
+    "normal": {
+      "x": -4.4881100043246005e-06,
+      "y": 1.1913513475190684e-07,
+      "z": 0.9999999999899214
+    },
+    "distance_cm": 1967.71630859375,
+    "actor": "SM_Decal_Dirt67_776",
+    "component": "StaticMeshComponent0",
+    "physical_material": "DefaultPhysicalMaterial",
+    "walkable": true
+  },
+  "preflight": {
+    "center": {
+      "x": -4510,
+      "y": -450,
+      "z": 87.28359911540846
+    },
+    "extent": {
+      "x": 220,
+      "y": 180,
+      "z": 55
+    },
+    "clear": false,
+    "intersection_count": 16,
+    "generated_intersection_count": 0,
+    "intersections": [
+      {
+        "actor": "SkyDomeMesh",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Bollard15_1424",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Bollard16_1425",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Bollard17_1426",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Decal_Dirt45_1770",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Decal_Dirt45_50",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Decal_Dirt67_1725",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Decal_Dirt67_776",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Decal_Dirt67_777",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Sidewalk01_400x492",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_Sidewalk01_400x493",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "SM_StreetLight6_899",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "StaticMeshActor_2004",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "StaticMeshActor_404",
+        "class": "/Script/Engine.StaticMeshActor",
+        "generated": false
+      },
+      {
+        "actor": "GameplayDebuggerCategoryReplicator_2147482374",
+        "class": "/Script/GameplayDebugger.GameplayDebuggerCategoryReplicator",
+        "generated": false
+      },
+      {
+        "actor": "InstancedFoliageActor_0",
+        "class": "/Script/Foliage.InstancedFoliageActor",
+        "generated": false
+      }
+    ]
+  },
+  "pre_generation_capture": {
+    "camera_id": 0,
+    "render_source": "mqrc",
+    "renderer_class": "/Script/UnrealCV.MovieQualityRenderComponent",
+    "uses_base_camera_sensor": false,
+    "requested_width": 640,
+    "requested_height": 360,
+    "actual_width": 640,
+    "actual_height": 360,
+    "png_compression_quality": 100,
+    "bytes": 1038749
+  },
+  "asset_searches": {
+    "bench": {
+      "path": "/Game",
+      "search_spec": "bench",
+      "total": 1,
+      "offset": 0,
+      "limit": 30,
+      "has_more": false,
+      "items": [
+        {
+          "name": "SM_Bench",
+          "type": "StaticMesh",
+          "path": "/Game/TokyoStylizedEnvironment/Meshes/Unique_Props/SM_Bench.SM_Bench",
+          "actor_blueprint": false
+        }
+      ]
+    },
+    "table": {
+      "path": "/Game",
+      "search_spec": "table",
+      "total": 1,
+      "offset": 0,
+      "limit": 30,
+      "has_more": false,
+      "items": [
+        {
+          "name": "SM_table",
+          "type": "StaticMesh",
+          "path": "/Game/RoofProps/Geometry/Props/SM_table.SM_table",
+          "actor_blueprint": false
+        }
+      ]
+    },
+    "cone": {
+      "path": "/Game",
+      "search_spec": "cone",
+      "total": 3,
+      "offset": 0,
+      "limit": 30,
+      "has_more": false,
+      "items": [
+        {
+          "name": "SM_RoadConstruction_cone02",
+          "type": "StaticMesh",
+          "path": "/Game/RoofProps/Geometry/Props/SM_RoadConstruction_cone02.SM_RoadConstruction_cone02",
+          "actor_blueprint": false
+        },
+        {
+          "name": "SM_Cone01",
+          "type": "StaticMesh",
+          "path": "/Game/TokyoStylizedEnvironment/Meshes/Road_Barriers/SM_Cone01.SM_Cone01",
+          "actor_blueprint": false
+        },
+        {
+          "name": "SM_Cone02",
+          "type": "StaticMesh",
+          "path": "/Game/TokyoStylizedEnvironment/Meshes/Road_Barriers/SM_Cone02.SM_Cone02",
+          "actor_blueprint": false
+        }
+      ]
+    }
+  },
+  "actors": [
+    {
+      "role": "bench",
+      "asset_path": "/Game/TokyoStylizedEnvironment/Meshes/Unique_Props/SM_Bench.SM_Bench",
+      "name": "MCPDemo_Bench",
+      "location": {
+        "x": -4620.0,
+        "y": -500.0,
+        "z": 232.2836
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "asset_bounds": {
+        "asset_path": "/Game/TokyoStylizedEnvironment/Meshes/Unique_Props/SM_Bench.SM_Bench",
+        "asset_type": "StaticMesh",
+        "bounds": {
+          "origin": {
+            "x": 0,
+            "y": 0,
+            "z": 26.77194133400917
+          },
+          "extent": {
+            "x": 82.52266693115234,
+            "y": 27.062114715576172,
+            "z": 26.77194294333458
+          },
+          "min": {
+            "x": -82.52266693115234,
+            "y": -27.062114715576172,
+            "z": -1.6093254089355469e-06
+          },
+          "max": {
+            "x": 82.52266693115234,
+            "y": 27.062114715576172,
+            "z": 53.54388427734375
+          },
+          "size_cm": {
+            "x": 165.0453338623047,
+            "y": 54.124229431152344,
+            "z": 53.54388588666916
+          }
+        },
+        "bounds_source": "static_mesh_bounds",
+        "confidence": "native",
+        "size_description": "165 x 54 x 54 cm"
+      },
+      "spawn_result": {
+        "actor": "MCPDemo_Bench",
+        "class": "/Script/Engine.StaticMeshActor",
+        "location": {
+          "x": -4620,
+          "y": -500,
+          "z": 46.68332144791796
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "origin": {
+            "x": -4620,
+            "y": -500,
+            "z": 73.45526278192713
+          },
+          "extent": {
+            "x": 82.52266693115234,
+            "y": 27.062114715576172,
+            "z": 26.77194294333458
+          },
+          "min": {
+            "x": -4702.522666931152,
+            "y": -527.0621147155762,
+            "z": 46.68331983859255
+          },
+          "max": {
+            "x": -4537.477333068848,
+            "y": -472.9378852844238,
+            "z": 100.22720572526171
+          },
+          "size_cm": {
+            "x": 165.0453338623047,
+            "y": 54.124229431152344,
+            "z": 53.54388588666916
+          }
+        },
+        "generated": true,
+        "result": {
+          "asset_path": "/Game/TokyoStylizedEnvironment/Meshes/Unique_Props/SM_Bench.SM_Bench",
+          "settled": true,
+          "settle_mode": "bounds",
+          "ground_location": {
+            "x": -4619.999998718216,
+            "y": -499.999995912063,
+            "z": 46.68331983859253
+          },
+          "ground_normal": {
+            "x": 0,
+            "y": 0,
+            "z": 1
+          },
+          "ground_actor": "StaticMeshActor_404",
+          "overlap_count": 0,
+          "annotated": true
+        }
+      },
+      "validation": {
+        "actor": "MCPDemo_Bench",
+        "bounds": {
+          "origin": {
+            "x": -4620,
+            "y": -500,
+            "z": 73.45526278192713
+          },
+          "extent": {
+            "x": 82.52266693115234,
+            "y": 27.062114715576172,
+            "z": 26.77194294333458
+          },
+          "min": {
+            "x": -4702.522666931152,
+            "y": -527.0621147155762,
+            "z": 46.68331983859255
+          },
+          "max": {
+            "x": -4537.477333068848,
+            "y": -472.9378852844238,
+            "z": 100.22720572526171
+          },
+          "size_cm": {
+            "x": 165.0453338623047,
+            "y": 54.124229431152344,
+            "z": 53.54388588666916
+          }
+        },
+        "overlap_count": 0,
+        "overlaps": [],
+        "ground_contact": true,
+        "valid": true
+      }
+    },
+    {
+      "role": "table",
+      "asset_path": "/Game/RoofProps/Geometry/Props/SM_table.SM_table",
+      "name": "MCPDemo_Table",
+      "location": {
+        "x": -4400.0,
+        "y": -500.0,
+        "z": 232.2836
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "asset_bounds": {
+        "asset_path": "/Game/RoofProps/Geometry/Props/SM_table.SM_table",
+        "asset_type": "StaticMesh",
+        "bounds": {
+          "origin": {
+            "x": 1.59429931640625,
+            "y": -1.9073486328125e-06,
+            "z": 36.95882034301758
+          },
+          "extent": {
+            "x": 44.36102294921875,
+            "y": 39.1630859375,
+            "z": 36.99135208129883
+          },
+          "min": {
+            "x": -42.7667236328125,
+            "y": -39.16308784484863,
+            "z": -0.03253173828125
+          },
+          "max": {
+            "x": 45.955322265625,
+            "y": 39.16308403015137,
+            "z": 73.9501724243164
+          },
+          "size_cm": {
+            "x": 88.7220458984375,
+            "y": 78.326171875,
+            "z": 73.98270416259766
+          }
+        },
+        "bounds_source": "static_mesh_bounds",
+        "confidence": "native",
+        "size_description": "89 x 78 x 74 cm"
+      },
+      "spawn_result": {
+        "actor": "MCPDemo_Table",
+        "class": "/Script/Engine.StaticMeshActor",
+        "location": {
+          "x": -4400,
+          "y": -500,
+          "z": 20.91662426349282
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "origin": {
+            "x": -4398.405700683594,
+            "y": -500.00000190734863,
+            "z": 57.8754446065104
+          },
+          "extent": {
+            "x": 44.36102294921875,
+            "y": 39.1630859375,
+            "z": 36.99135208129883
+          },
+          "min": {
+            "x": -4442.7667236328125,
+            "y": -539.1630878448486,
+            "z": 20.88409252521157
+          },
+          "max": {
+            "x": -4354.044677734375,
+            "y": -460.83691596984863,
+            "z": 94.86679668780923
+          },
+          "size_cm": {
+            "x": 88.7220458984375,
+            "y": 78.326171875,
+            "z": 73.98270416259766
+          }
+        },
+        "generated": true,
+        "result": {
+          "asset_path": "/Game/RoofProps/Geometry/Props/SM_table.SM_table",
+          "settled": true,
+          "settle_mode": "bounds",
+          "ground_location": {
+            "x": -4398.405700683594,
+            "y": -500.00000190734886,
+            "z": 20.884092525211546
+          },
+          "ground_normal": {
+            "x": 0,
+            "y": 0.9999999999976728,
+            "z": 2.1574086360831315e-06
+          },
+          "ground_actor": "SM_Wall_500x626",
+          "overlap_count": 0,
+          "annotated": true
+        }
+      },
+      "validation": {
+        "actor": "MCPDemo_Table",
+        "bounds": {
+          "origin": {
+            "x": -4398.405700683594,
+            "y": -500.00000190734863,
+            "z": 57.8754446065104
+          },
+          "extent": {
+            "x": 44.36102294921875,
+            "y": 39.1630859375,
+            "z": 36.99135208129883
+          },
+          "min": {
+            "x": -4442.7667236328125,
+            "y": -539.1630878448486,
+            "z": 20.88409252521157
+          },
+          "max": {
+            "x": -4354.044677734375,
+            "y": -460.83691596984863,
+            "z": 94.86679668780923
+          },
+          "size_cm": {
+            "x": 88.7220458984375,
+            "y": 78.326171875,
+            "z": 73.98270416259766
+          }
+        },
+        "overlap_count": 0,
+        "overlaps": [],
+        "ground_contact": true,
+        "valid": true
+      }
+    },
+    {
+      "role": "traffic_cone",
+      "asset_path": "/Game/TokyoStylizedEnvironment/Meshes/Road_Barriers/SM_Cone01.SM_Cone01",
+      "name": "MCPDemo_Cone",
+      "location": {
+        "x": -4450.0,
+        "y": -350.0,
+        "z": 232.2836
+      },
+      "rotation": {
+        "x": 0.0,
+        "y": 20.0,
+        "z": 0.0
+      },
+      "asset_bounds": {
+        "asset_path": "/Game/TokyoStylizedEnvironment/Meshes/Road_Barriers/SM_Cone01.SM_Cone01",
+        "asset_type": "StaticMesh",
+        "bounds": {
+          "origin": {
+            "x": 0,
+            "y": -3.814697265625e-06,
+            "z": 47.161155700683594
+          },
+          "extent": {
+            "x": 24.839630126953125,
+            "y": 24.953815460205078,
+            "z": 47.161163330078125
+          },
+          "min": {
+            "x": -24.839630126953125,
+            "y": -24.953819274902344,
+            "z": -7.62939453125e-06
+          },
+          "max": {
+            "x": 24.839630126953125,
+            "y": 24.953811645507812,
+            "z": 94.32231903076172
+          },
+          "size_cm": {
+            "x": 49.67926025390625,
+            "y": 49.907630920410156,
+            "z": 94.32232666015625
+          }
+        },
+        "bounds_source": "static_mesh_bounds",
+        "confidence": "native",
+        "size_description": "50 x 50 x 94 cm"
+      },
+      "spawn_result": {
+        "actor": "MCPDemo_Cone",
+        "class": "/Script/Engine.StaticMeshActor",
+        "location": {
+          "x": -4450,
+          "y": -350,
+          "z": 29.999253036975603
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 20.00000000000001,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bounds": {
+          "origin": {
+            "x": -4449.999998695297,
+            "y": -350.00000358464285,
+            "z": 77.1604087376592
+          },
+          "extent": {
+            "x": 31.876324673570707,
+            "y": 31.944570104585125,
+            "z": 47.161163330078125
+          },
+          "min": {
+            "x": -4481.876323368868,
+            "y": -381.944573689228,
+            "z": 29.99924540758107
+          },
+          "max": {
+            "x": -4418.123674021726,
+            "y": -318.05543348005773,
+            "z": 124.32157206773732
+          },
+          "size_cm": {
+            "x": 63.752649347141414,
+            "y": 63.88914020917025,
+            "z": 94.32232666015625
+          }
+        },
+        "generated": true,
+        "result": {
+          "asset_path": "/Game/TokyoStylizedEnvironment/Meshes/Road_Barriers/SM_Cone01.SM_Cone01",
+          "settled": true,
+          "settle_mode": "bounds",
+          "ground_location": {
+            "x": -4449.999998695297,
+            "y": -350.0000386311049,
+            "z": 29.999245407581043
+          },
+          "ground_normal": {
+            "x": 0,
+            "y": -2.1574086360831315e-06,
+            "z": 0.9999999999976728
+          },
+          "ground_actor": "SM_Wall_500x624",
+          "overlap_count": 0,
+          "annotated": true
+        }
+      },
+      "validation": {
+        "actor": "MCPDemo_Cone",
+        "bounds": {
+          "origin": {
+            "x": -4449.999998695297,
+            "y": -350.00000358464285,
+            "z": 77.1604087376592
+          },
+          "extent": {
+            "x": 31.876324673570707,
+            "y": 31.944570104585125,
+            "z": 47.161163330078125
+          },
+          "min": {
+            "x": -4481.876323368868,
+            "y": -381.944573689228,
+            "z": 29.99924540758107
+          },
+          "max": {
+            "x": -4418.123674021726,
+            "y": -318.05543348005773,
+            "z": 124.32157206773732
+          },
+          "size_cm": {
+            "x": 63.752649347141414,
+            "y": 63.88914020917025,
+            "z": 94.32232666015625
+          }
+        },
+        "overlap_count": 0,
+        "overlaps": [],
+        "ground_contact": true,
+        "valid": true
+      }
+    }
+  ],
+  "views": [
+    {
+      "name": "01_top_down",
+      "preset": "top_down",
+      "distance_cm": 600.0,
+      "metadata": {
+        "camera_id": 0,
+        "render_source": "mqrc",
+        "renderer_class": "/Script/UnrealCV.MovieQualityRenderComponent",
+        "uses_base_camera_sensor": false,
+        "requested_width": 640,
+        "requested_height": 360,
+        "actual_width": 640,
+        "actual_height": 360,
+        "png_compression_quality": 100,
+        "bytes": 1053521
+      }
+    },
+    {
+      "name": "02_x_positive_down_45",
+      "preset": "x_positive_down_45",
+      "distance_cm": 650.0,
+      "metadata": {
+        "camera_id": 0,
+        "render_source": "mqrc",
+        "renderer_class": "/Script/UnrealCV.MovieQualityRenderComponent",
+        "uses_base_camera_sensor": false,
+        "requested_width": 640,
+        "requested_height": 360,
+        "actual_width": 640,
+        "actual_height": 360,
+        "png_compression_quality": 100,
+        "bytes": 1103123
+      }
+    },
+    {
+      "name": "03_x_negative_down_45",
+      "preset": "x_negative_down_45",
+      "distance_cm": 650.0,
+      "metadata": {
+        "camera_id": 0,
+        "render_source": "mqrc",
+        "renderer_class": "/Script/UnrealCV.MovieQualityRenderComponent",
+        "uses_base_camera_sensor": false,
+        "requested_width": 640,
+        "requested_height": 360,
+        "actual_width": 640,
+        "actual_height": 360,
+        "png_compression_quality": 100,
+        "bytes": 1143424
+      }
+    },
+    {
+      "name": "04_y_positive_down_45",
+      "preset": "y_positive_down_45",
+      "distance_cm": 650.0,
+      "metadata": {
+        "camera_id": 0,
+        "render_source": "mqrc",
+        "renderer_class": "/Script/UnrealCV.MovieQualityRenderComponent",
+        "uses_base_camera_sensor": false,
+        "requested_width": 640,
+        "requested_height": 360,
+        "actual_width": 640,
+        "actual_height": 360,
+        "png_compression_quality": 100,
+        "bytes": 1164600
+      }
+    },
+    {
+      "name": "05_y_negative_down_45",
+      "preset": "y_negative_down_45",
+      "distance_cm": 650.0,
+      "metadata": {
+        "camera_id": 0,
+        "render_source": "mqrc",
+        "renderer_class": "/Script/UnrealCV.MovieQualityRenderComponent",
+        "uses_base_camera_sensor": false,
+        "requested_width": 640,
+        "requested_height": 360,
+        "actual_width": 640,
+        "actual_height": 360,
+        "png_compression_quality": 100,
+        "bytes": 1182833
+      }
+    },
+    {
+      "name": "06_hero_view",
+      "preset": "x_negative_down_45",
+      "distance_cm": 650.0,
+      "metadata": {
+        "camera_id": 0,
+        "render_source": "mqrc",
+        "renderer_class": "/Script/UnrealCV.MovieQualityRenderComponent",
+        "uses_base_camera_sensor": false,
+        "requested_width": 640,
+        "requested_height": 360,
+        "actual_width": 640,
+        "actual_height": 360,
+        "png_compression_quality": 100,
+        "bytes": 1144517
+      }
+    }
+  ],
+  "evaluation": {
+    "object_count_ok": true,
+    "overlap_ok": true,
+    "grounding_ok": true,
+    "six_views_ok": true
+  },
+  "perception_after": {
+    "schema_version": "unrealcv.native_perception.v1",
+    "world_name": "Tokyo",
+    "world_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo",
+    "gravity_z_cm_s2": -980,
+    "search_radius_cm": 1200,
+    "max_objects": 32,
+    "agent": {
+      "position_cm": {
+        "x": -4969.61962890625,
+        "y": -450,
+        "z": 546.9030151367188
+      },
+      "rotation": {
+        "pitch": -45,
+        "yaw": 0,
+        "roll": 0
+      },
+      "forward": {
+        "x": 0.7071067811865477,
+        "y": 0,
+        "z": -0.7071067811865476
+      },
+      "right": {
+        "x": 0,
+        "y": 1,
+        "z": 0
+      },
+      "up": {
+        "x": 0.7071067768845225,
+        "y": 0,
+        "z": 0.7071067854885726
+      }
+    },
+    "agent_nav": {
+      "available": true,
+      "agent_on_navmesh": false,
+      "target_on_navmesh": false,
+      "reachable": false,
+      "reason": "target_not_on_navmesh"
+    },
+    "objects_found": 220,
+    "objects_returned": 32,
+    "objects_truncated": true,
+    "objects": [
+      {
+        "name": "SM_Decal_Dirt45_1779",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.SM_Decal_Dirt45_1779",
+        "position_cm": {
+          "x": -5050.3491450420015,
+          "y": -329.303163531921,
+          "z": 622.0449905186938
+        },
+        "rotation": {
+          "pitch": 9.999999865374518e-07,
+          "yaw": -130.00016730282204,
+          "roll": 2.5247572334203354e-15
+        },
+        "scale": {
+          "x": 2.079296,
+          "y": 1,
+          "z": 0.800427
+        },
+        "bbox": {
+          "min": {
+            "x": -5364.428002485974,
+            "y": -703.605464654755,
+            "z": 458.2402028115704
+          },
+          "max": {
+            "x": -4736.270209739411,
+            "y": 44.99939986700633,
+            "z": 622.0450356873301
+          },
+          "size_cm": {
+            "x": 628.1577927465623,
+            "y": 748.6048645217613,
+            "z": 163.80483287575976
+          }
+        },
+        "delta_cm": {
+          "x": -80.72947720644243,
+          "y": 120.69696760612567,
+          "z": -6.760395887268487
+        },
+        "relative_to_agent_cm": {
+          "x": -52.304039375310694,
+          "y": 120.69696760612567,
+          "z": -61.864682231496616
+        },
+        "distance_cm": 145.3640594482422,
+        "azimuth_degrees": 113.42950014944957,
+        "elevation_degrees": -25.187662558670592,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 159,
+          "g": 127,
+          "b": 127
+        },
+        "materials": [
+          "MI_Decal01_Light01"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_1750",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_1750",
+        "position_cm": {
+          "x": -5056.644975023301,
+          "y": -402.69370173013925,
+          "z": 274.9707128713499
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -129.9999986056537,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5161.436509373436,
+            "y": -512.3838304864257,
+            "z": 274.97071287134986
+          },
+          "max": {
+            "x": -4951.853440673167,
+            "y": -293.0035729738529,
+            "z": 519.4262182424436
+          },
+          "size_cm": {
+            "x": 209.583068700269,
+            "y": 219.38025751257288,
+            "z": 244.4555053710937
+          }
+        },
+        "delta_cm": {
+          "x": -87.02534611705141,
+          "y": 47.30629826986069,
+          "z": -149.70454957982201
+        },
+        "relative_to_agent_cm": {
+          "x": 44.32088878947849,
+          "y": 47.30629826986069,
+          "z": -167.3933148264908
+        },
+        "distance_cm": 179.5069580078125,
+        "azimuth_degrees": 46.866158704994724,
+        "elevation_degrees": -68.83065139637937,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 175,
+          "g": 159,
+          "b": 255
+        },
+        "materials": [
+          "MI_UtilityTrim"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "SM_Tree5_1100",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.SM_Tree5_1100",
+        "position_cm": {
+          "x": -5138.014720490362,
+          "y": -617.4368673220192,
+          "z": 30.003295999999978
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -9.238029076641395e-05,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5333.789599447021,
+            "y": -782.7435798072753,
+            "z": 30.003295999999978
+          },
+          "max": {
+            "x": -4942.025381138846,
+            "y": -462.76327285834134,
+            "z": 910.5029297890625
+          },
+          "size_cm": {
+            "x": 391.76421830817526,
+            "y": 319.98030694893396,
+            "z": 880.4996337890625
+          }
+        },
+        "delta_cm": {
+          "x": -168.2878613866833,
+          "y": -172.75342633280832,
+          "z": -76.64990224218752
+        },
+        "relative_to_agent_cm": {
+          "x": -64.79782337889716,
+          "y": -172.75342633280832,
+          "z": -173.19715323641347
+        },
+        "distance_cm": 253.06077575683594,
+        "azimuth_degrees": -110.56049056419198,
+        "elevation_degrees": -43.18917034507071,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 0,
+          "g": 191,
+          "b": 79
+        },
+        "materials": [
+          "MI_TreeTrunk_Brown_Standard",
+          "MI_Leaves01_Standard"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_2847",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_2847",
+        "position_cm": {
+          "x": -5069.854264147816,
+          "y": -329.68211200926334,
+          "z": 974.482206
+        },
+        "rotation": {
+          "pitch": -90,
+          "yaw": 140,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1.494264,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5087.234154072729,
+            "y": -347.6527927323461,
+            "z": 574.4821754824219
+          },
+          "max": {
+            "x": -5052.474374222903,
+            "y": -311.7114312861806,
+            "z": 974.4822212587891
+          },
+          "size_cm": {
+            "x": 34.75977984982637,
+            "y": 35.9413614461655,
+            "z": 400.0000457763672
+          }
+        },
+        "delta_cm": {
+          "x": -100.23463524156614,
+          "y": 120.31788799073666,
+          "z": 227.57918323388674
+        },
+        "relative_to_agent_cm": {
+          "x": -231.79937346280923,
+          "y": 120.31788799073666,
+          "z": 90.04619484276891
+        },
+        "distance_cm": 276.2528991699219,
+        "azimuth_degrees": 152.5679587467484,
+        "elevation_degrees": 19.02348357683913,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 159,
+          "g": 239,
+          "b": 63
+        },
+        "materials": [
+          "MI_StreetTrim_MatteWhite"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "SM_Window95_52",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.SM_Window95_52",
+        "position_cm": {
+          "x": -4951.029813737623,
+          "y": -210.03751190754934,
+          "z": 367.2397126916112
+        },
+        "rotation": {
+          "pitch": -90,
+          "yaw": -129.9998176056538,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.507806,
+          "y": 0.551574,
+          "z": 0.769612
+        },
+        "bbox": {
+          "min": {
+            "x": -4998.115706234641,
+            "y": -269.0486676525165,
+            "z": 332.82327262007794
+          },
+          "max": {
+            "x": -4900.49256962501,
+            "y": -153.92236530757458,
+            "z": 401.65615276314446
+          },
+          "size_cm": {
+            "x": 97.62313660963082,
+            "y": 115.12630234494188,
+            "z": 68.83288014306652
+          }
+        },
+        "delta_cm": {
+          "x": 20.31549097642437,
+          "y": 238.51448351995447,
+          "z": -179.66330244510755
+        },
+        "relative_to_agent_cm": {
+          "x": 141.40636023635068,
+          "y": 238.51448351995447,
+          "z": -112.67591891705517
+        },
+        "distance_cm": 299.30047607421875,
+        "azimuth_degrees": 59.33787610344801,
+        "elevation_degrees": -22.1148385510894,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 0,
+          "g": 143,
+          "b": 111
+        },
+        "materials": [
+          "MI_Window01_Gray"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "StaticMeshActor_1750",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4962.866052128037,
+            "y": -370.7093107675404,
+            "z": 487.17654582040757
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3338",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3338",
+        "position_cm": {
+          "x": -5022.881179442316,
+          "y": -776.161193,
+          "z": 380.50936551820234
+        },
+        "rotation": {
+          "pitch": 90,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 3.055872917175293,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5028.293346037775,
+            "y": -775.811008440178,
+            "z": 380.50936551820234
+          },
+          "max": {
+            "x": -5003.612464537531,
+            "y": -771.3918791877442,
+            "z": 991.6839489532612
+          },
+          "size_cm": {
+            "x": 24.68088150024414,
+            "y": 4.419129252433777,
+            "z": 611.1745834350588
+          }
+        },
+        "delta_cm": {
+          "x": -46.333276381403266,
+          "y": -323.60144381396105,
+          "z": 139.193642099013
+        },
+        "relative_to_agent_cm": {
+          "x": -131.18734175065853,
+          "y": -323.60144381396105,
+          "z": 65.6621951005261
+        },
+        "distance_cm": 355.3020324707031,
+        "azimuth_degrees": -112.06752962416165,
+        "elevation_degrees": 10.64986251698034,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 207,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim_MatteWhite"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4986.415896547895,
+            "y": -567.3087008736425,
+            "z": 597.3620771608465
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_2682",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_2682",
+        "position_cm": {
+          "x": -4847.389336785421,
+          "y": -786.7744360000002,
+          "z": 578.7478308315849
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2089548110961914,
+          "y": 1.2089548110961914,
+          "z": 1.2089548110961914
+        },
+        "bbox": {
+          "min": {
+            "x": -4906.587870768303,
+            "y": -786.7744992018531,
+            "z": 515.741096572624
+          },
+          "max": {
+            "x": -4788.190747460979,
+            "y": -786.7744936936251,
+            "z": 641.7545650905458
+          },
+          "size_cm": {
+            "x": 118.39712330732436,
+            "y": 5.508228014150518e-06,
+            "z": 126.01346851792186
+          }
+        },
+        "delta_cm": {
+          "x": 122.23031979160896,
+          "y": -336.7744964477391,
+          "z": 31.844815694866156
+        },
+        "relative_to_agent_cm": {
+          "x": 63.91220353060641,
+          "y": -336.7744964477391,
+          "z": 108.94757272588194
+        },
+        "distance_cm": 359.682373046875,
+        "azimuth_degrees": -79.25434057817735,
+        "elevation_degrees": 17.631831273474557,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 79,
+          "g": 111,
+          "b": 239
+        },
+        "materials": [
+          "MI_Text02_White"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_2828",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_2828",
+        "position_cm": {
+          "x": -5387.6424931018555,
+          "y": -714.9281664684781,
+          "z": 540.000061
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -130.00000130282643,
+          "roll": 0
+        },
+        "scale": {
+          "x": -1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5395.302957003207,
+            "y": -721.3560661173522,
+            "z": 540.000061
+          },
+          "max": {
+            "x": -5058.588254880486,
+            "y": -325.4780993238053,
+            "z": 1040.000061
+          },
+          "size_cm": {
+            "x": 336.714702122722,
+            "y": 395.8779667935469,
+            "z": 500
+          }
+        },
+        "delta_cm": {
+          "x": -257.3259770355962,
+          "y": -73.41708272057872,
+          "z": 243.0970458632812
+        },
+        "relative_to_agent_cm": {
+          "x": -353.8525130148804,
+          "y": -73.41708272057872,
+          "z": -10.061371568148218
+        },
+        "distance_cm": 361.528564453125,
+        "azimuth_degrees": -168.2786143892145,
+        "elevation_degrees": -1.5947524763452705,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 239,
+          "b": 175
+        },
+        "materials": [
+          "MI_Panel02_Gray",
+          "MI_TriangleGlass"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -5091.982025098354,
+            "y": -484.9109338536824,
+            "z": 662.4993392301002
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3337",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3337",
+        "position_cm": {
+          "x": -5024.281334671122,
+          "y": -776.161193,
+          "z": 376.6039232920155
+        },
+        "rotation": {
+          "pitch": -90,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5031.9460742798865,
+            "y": -776.161193,
+            "z": 370.7763571451649
+          },
+          "max": {
+            "x": -5016.616595062357,
+            "y": -765.892339812439,
+            "z": 382.4314894388661
+          },
+          "size_cm": {
+            "x": 15.329479217529297,
+            "y": 10.268853187561035,
+            "z": 11.655132293701172
+          }
+        },
+        "delta_cm": {
+          "x": -54.66170576487184,
+          "y": -321.0267664062195,
+          "z": -170.29909184470324
+        },
+        "relative_to_agent_cm": {
+          "x": 81.76797888794867,
+          "y": -321.0267664062195,
+          "z": -159.07130598833996
+        },
+        "distance_cm": 367.48858642578125,
+        "azimuth_degrees": -75.71017603621027,
+        "elevation_degrees": -25.64923366370097,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 175,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_660",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_660",
+        "position_cm": {
+          "x": -5066.24863651376,
+          "y": -331.9059507442758,
+          "z": 40.000036
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -129.99999799999998,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5395.302853026276,
+            "y": -721.3560359741683,
+            "z": 40.00003600000002
+          },
+          "max": {
+            "x": -5058.588172241874,
+            "y": -325.4780515369886,
+            "z": 540.000036
+          },
+          "size_cm": {
+            "x": 336.71468078440193,
+            "y": 395.87798443717975,
+            "z": 500
+          }
+        },
+        "delta_cm": {
+          "x": -257.3258837278254,
+          "y": -73.41704375557845,
+          "z": -256.9029791367187
+        },
+        "relative_to_agent_cm": {
+          "x": -0.29904091639190256,
+          "y": -73.41704375557845,
+          "z": -363.614716011547
+        },
+        "distance_cm": 370.95257568359375,
+        "azimuth_degrees": -90.2333747966556,
+        "elevation_degrees": -78.5848492696667,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 7,
+          "g": 159,
+          "b": 31
+        },
+        "materials": [
+          "MI_TileStack_DarkGray"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "StaticMeshActor_1750",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -5048.214567107484,
+            "y": -472.42372599098337,
+            "z": 468.43724582913654
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3325",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3325",
+        "position_cm": {
+          "x": -4960.613518077563,
+          "y": -816.9143915616759,
+          "z": 479.0131543985553
+        },
+        "rotation": {
+          "pitch": 90,
+          "yaw": -89.99999930282672,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -4960.613518170827,
+            "y": -824.5791311704405,
+            "z": 473.1855882517047
+          },
+          "max": {
+            "x": -4950.344664796738,
+            "y": -809.2496518279601,
+            "z": 484.8407205454059
+          },
+          "size_cm": {
+            "x": 10.268853374089304,
+            "y": 15.329479342480454,
+            "z": 11.655132293701172
+          }
+        },
+        "delta_cm": {
+          "x": 14.140537422467787,
+          "y": -366.9143914992003,
+          "z": -67.88986073816346
+        },
+        "relative_to_agent_cm": {
+          "x": 58.004250571583924,
+          "y": -366.9143914992003,
+          "z": -38.00651135361345
+        },
+        "distance_cm": 373.4101867675781,
+        "azimuth_degrees": -81.01664785531838,
+        "elevation_degrees": -5.841807081510468,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 255,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4964.419070260954,
+            "y": -584.9425240205396,
+            "z": 521.9347136046414
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3134",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3134",
+        "position_cm": {
+          "x": -4995.868000460016,
+          "y": -774.9111550799183,
+          "z": 541.5433462392446
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.60170578956604,
+          "y": 1,
+          "z": 1.2366684675216675
+        },
+        "bbox": {
+          "min": {
+            "x": -5029.580808476204,
+            "y": -774.527198021727,
+            "z": 183.24488716280916
+          },
+          "max": {
+            "x": -4962.15519703448,
+            "y": -774.5271508148484,
+            "z": 541.5432948522866
+          },
+          "size_cm": {
+            "x": 67.42561144172396,
+            "y": 4.7206878662109375e-05,
+            "z": 358.2984076894775
+          }
+        },
+        "delta_cm": {
+          "x": -26.248373849091877,
+          "y": -324.5271744182877,
+          "z": -184.50892412917085
+        },
+        "relative_to_agent_cm": {
+          "x": 111.90710739067525,
+          "y": -324.5271744182877,
+          "z": -149.02791526582428
+        },
+        "distance_cm": 374.23309326171875,
+        "azimuth_degrees": -70.97420695415147,
+        "elevation_degrees": -23.46708490455134,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 239,
+          "g": 47,
+          "b": 63
+        },
+        "materials": [
+          "M_Decal01"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_2681",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_2681",
+        "position_cm": {
+          "x": -4847.389337472881,
+          "y": -786.7744360000002,
+          "z": 671.4245882184525
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.069982,
+          "y": 1.069982,
+          "z": 1.069982
+        },
+        "bbox": {
+          "min": {
+            "x": -4899.6411809282645,
+            "y": -786.7744918763041,
+            "z": 617.0404869322587
+          },
+          "max": {
+            "x": -4795.137494017498,
+            "y": -786.7744871218935,
+            "z": 725.8086895046464
+          },
+          "size_cm": {
+            "x": 104.50368691076619,
+            "y": 4.75441061098536e-06,
+            "z": 108.76820257238774
+          }
+        },
+        "delta_cm": {
+          "x": 122.23029143336862,
+          "y": -336.77448949909876,
+          "z": 124.52157308173378
+        },
+        "relative_to_agent_cm": {
+          "x": -1.620179729634586,
+          "y": -336.77448949909876,
+          "z": 174.47991667891029
+        },
+        "distance_cm": 379.29266357421875,
+        "azimuth_degrees": -90.27564066549267,
+        "elevation_degrees": 27.38800788629115,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 79,
+          "g": 79,
+          "b": 239
+        },
+        "materials": [
+          "MI_Text02_White"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3328",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3328",
+        "position_cm": {
+          "x": -4960.613522,
+          "y": -816.067712575561,
+          "z": 474.56279505686166
+        },
+        "rotation": {
+          "pitch": -90,
+          "yaw": -89.99999930282661,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.5559867024421692,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -4960.263338244474,
+            "y": -821.7679422160754,
+            "z": 363.3654545684278
+          },
+          "max": {
+            "x": -4955.844213840429,
+            "y": -808.7500769813344,
+            "z": 474.56279542554194
+          },
+          "size_cm": {
+            "x": 4.419124404044851,
+            "y": 13.017865234741066,
+            "z": 111.19734085711411
+          }
+        },
+        "delta_cm": {
+          "x": 11.565852863798682,
+          "y": -365.2590095987049,
+          "z": -127.93889013973387
+        },
+        "relative_to_agent_cm": {
+          "x": 98.64474928484472,
+          "y": -365.2590095987049,
+          "z": -82.28816440524155
+        },
+        "distance_cm": 387.1902160644531,
+        "azimuth_degrees": -74.88679661319411,
+        "elevation_degrees": -12.270449860513867,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 191,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim_MatteWhite"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3336",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3336",
+        "position_cm": {
+          "x": -5069.675071002489,
+          "y": -776.161193,
+          "z": 328.07886102283413
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5069.675071617531,
+            "y": -775.6446083652191,
+            "z": 323.0701954611581
+          },
+          "max": {
+            "x": -5017.953681231981,
+            "y": -772.3703955279999,
+            "z": 373.27043130481655
+          },
+          "size_cm": {
+            "x": 51.72139038554997,
+            "y": 3.2742128372192383,
+            "z": 50.20023584365845
+          }
+        },
+        "delta_cm": {
+          "x": -74.19474751850612,
+          "y": -324.0075019466095,
+          "z": -198.73270175373142
+        },
+        "relative_to_agent_cm": {
+          "x": 88.06163078068701,
+          "y": -324.0075019466095,
+          "z": -192.98885068811202
+        },
+        "distance_cm": 387.2730407714844,
+        "azimuth_degrees": -74.79493776332428,
+        "elevation_degrees": -29.889417372551325,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 143,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim_MatteWhite"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3326",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3326",
+        "position_cm": {
+          "x": -4960.613518,
+          "y": -862.4428699000589,
+          "z": 526.9454326417442
+        },
+        "rotation": {
+          "pitch": -6.971729931137817e-07,
+          "yaw": 90,
+          "roll": 179.99999860565396
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -4960.096934464998,
+            "y": -862.4428710649909,
+            "z": 481.7538616381653
+          },
+          "max": {
+            "x": -4956.8227204061095,
+            "y": -810.7214800686058,
+            "z": 531.9540981908488
+          },
+          "size_cm": {
+            "x": 3.2742140588889015,
+            "y": 51.721390996385026,
+            "z": 50.20023655268352
+          }
+        },
+        "delta_cm": {
+          "x": 11.159801470696038,
+          "y": -386.58217556679836,
+          "z": -40.04903522221173
+        },
+        "relative_to_agent_cm": {
+          "x": 36.21011555794737,
+          "y": -386.58217556679836,
+          "z": -20.42777330928173
+        },
+        "distance_cm": 388.8113098144531,
+        "azimuth_degrees": -84.64887105099001,
+        "elevation_degrees": -3.0116518225921816,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 127,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim_MatteWhite"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4965.950357075773,
+            "y": -577.105763547525,
+            "z": 533.7351467687646
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_278",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_278",
+        "position_cm": {
+          "x": -4960.613562663879,
+          "y": -792.3371207764889,
+          "z": 715.7210060455437
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -89.99999930282696,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -4960.613562828847,
+            "y": -805.8946511796261,
+            "z": 498.2368904449578
+          },
+          "max": {
+            "x": -4768.310492430552,
+            "y": -778.7795880334146,
+            "z": 933.2051216461297
+          },
+          "size_cm": {
+            "x": 192.30307039829495,
+            "y": 27.11506314621147,
+            "z": 434.9682312011719
+          }
+        },
+        "delta_cm": {
+          "x": 105.15760127655085,
+          "y": -342.33711960652033,
+          "z": 168.81799090882498
+        },
+        "relative_to_agent_cm": {
+          "x": -45.01469202330895,
+          "y": -342.33711960652033,
+          "z": 193.72999938774794
+        },
+        "distance_cm": 395.91961669921875,
+        "azimuth_degrees": -97.49097701679453,
+        "elevation_degrees": 29.29566714863243,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 127,
+          "g": 239,
+          "b": 223
+        },
+        "materials": [
+          "MI_StreetTrim",
+          "MI_Panel_Basic_Brown"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "StaticMeshActor_2681",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4866.170726709332,
+            "y": -786.7744876827496,
+            "z": 712.977875724556
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_2823",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_2823",
+        "position_cm": {
+          "x": -4744.854890744259,
+          "y": 51.11628217435542,
+          "z": 540.000036
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -129.99999930282658,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5073.909115820008,
+            "y": -338.3337959216762,
+            "z": 540.0000359999999
+          },
+          "max": {
+            "x": -4737.194426618535,
+            "y": 57.54418155583011,
+            "z": 1040.000036
+          },
+          "size_cm": {
+            "x": 336.71468920147345,
+            "y": 395.8779774775063,
+            "z": 499.9999999999999
+          }
+        },
+        "delta_cm": {
+          "x": 64.06785768697864,
+          "y": 309.60519281707695,
+          "z": 243.09702086328116
+        },
+        "relative_to_agent_cm": {
+          "x": -126.59273399068546,
+          "y": 309.60519281707695,
+          "z": 217.198369335419
+        },
+        "distance_cm": 398.81854248046875,
+        "azimuth_degrees": 112.23888718516774,
+        "elevation_degrees": 32.997640364302626,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 239,
+          "b": 15
+        },
+        "materials": [
+          "MI_Panel02_Gray",
+          "MI_TriangleGlass"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3335",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3335",
+        "position_cm": {
+          "x": -5073.666715200904,
+          "y": -776.161193,
+          "z": 328.07886080356917
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5079.494281347755,
+            "y": -776.161193,
+            "z": 320.4141211948045
+          },
+          "max": {
+            "x": -5067.839149054053,
+            "y": -765.892339812439,
+            "z": 335.7436004123338
+          },
+          "size_cm": {
+            "x": 11.655132293701172,
+            "y": 10.268853187561035,
+            "z": 15.329479217529297
+          }
+        },
+        "delta_cm": {
+          "x": -104.04708629465404,
+          "y": -321.0267664062195,
+          "z": -218.82415433314958
+        },
+        "relative_to_agent_cm": {
+          "x": 81.15964174572979,
+          "y": -321.0267664062195,
+          "z": -228.3044441918073
+        },
+        "distance_cm": 402.20391845703125,
+        "azimuth_degrees": -75.8121814254621,
+        "elevation_degrees": -34.585371444210395,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 111,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_1766",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_1766",
+        "position_cm": {
+          "x": -5092.541769489348,
+          "y": -372.572717477302,
+          "z": 156.50253987134994
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -129.9999986056537,
+          "roll": 0
+        },
+        "scale": {
+          "x": -2.715353,
+          "y": 3.518093,
+          "z": 2.235257
+        },
+        "bbox": {
+          "min": {
+            "x": -5155.225715394019,
+            "y": -507.8628371162128,
+            "z": 40.614648865627885
+          },
+          "max": {
+            "x": -4957.653890095553,
+            "y": -297.8688888043245,
+            "z": 272.39043940390076
+          },
+          "size_cm": {
+            "x": 197.57182529846614,
+            "y": 209.9939483118883,
+            "z": 231.77579053827287
+          }
+        },
+        "delta_cm": {
+          "x": -86.820173838536,
+          "y": 47.13413703973134,
+          "z": -390.40047100195443
+        },
+        "relative_to_agent_cm": {
+          "x": 214.66368470586522,
+          "y": 47.13413703973134,
+          "z": -337.44595539493787
+        },
+        "distance_cm": 402.7057189941406,
+        "azimuth_degrees": 12.384026560783754,
+        "elevation_degrees": -56.923933926493014,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 175,
+          "g": 223,
+          "b": 191
+        },
+        "materials": [
+          "MI_UtilityTrim"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "StaticMeshActor_1750",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -5014.769596642293,
+            "y": -425.48836090336545,
+            "z": 343.87916333070456
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_2115",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_2115",
+        "position_cm": {
+          "x": -5192.217846639177,
+          "y": -773.6869968754303,
+          "z": 540
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 3.0282703811224105e-07,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 0.800267
+        },
+        "bbox": {
+          "min": {
+            "x": -5427.210095174333,
+            "y": -773.6870570628373,
+            "z": 376.227964299881
+          },
+          "max": {
+            "x": -4957.225720174333,
+            "y": -773.6870456334184,
+            "z": 540.0000366333161
+          },
+          "size_cm": {
+            "x": 469.984375,
+            "y": 1.1429418918851297e-05,
+            "z": 163.77207233343512
+          }
+        },
+        "delta_cm": {
+          "x": -222.59827876808322,
+          "y": -323.68705134812785,
+          "z": -88.7890146701202
+        },
+        "relative_to_agent_cm": {
+          "x": -94.61743936884724,
+          "y": -323.68705134812785,
+          "z": -220.18406618982817
+        },
+        "distance_cm": 402.7490539550781,
+        "azimuth_degrees": -106.2942471199907,
+        "elevation_degrees": -33.14111041917005,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 63,
+          "g": 207,
+          "b": 47
+        },
+        "materials": [
+          "MI_Decal01_Light01"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -5055.149324415773,
+            "y": -574.3713792190841,
+            "z": 512.787309339919
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_1396",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_1396",
+        "position_cm": {
+          "x": -5130.9106207962695,
+          "y": -778.1847930000008,
+          "z": 751.1747809548758
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.534922,
+          "y": 0.534922,
+          "z": 0.534922
+        },
+        "bbox": {
+          "min": {
+            "x": -5147.606968403508,
+            "y": -778.1848052433938,
+            "z": 728.2608139728812
+          },
+          "max": {
+            "x": -5114.214273189031,
+            "y": -753.7498252314003,
+            "z": 764.6926988613242
+          },
+          "size_cm": {
+            "x": 33.3926952144775,
+            "y": 24.434980011993503,
+            "z": 36.43188488844294
+          }
+        },
+        "delta_cm": {
+          "x": -161.29099189001954,
+          "y": -315.9673152373971,
+          "z": 199.57374128038396
+        },
+        "relative_to_agent_cm": {
+          "x": -255.16989975117303,
+          "y": -315.9673152373971,
+          "z": 27.069993248840987
+        },
+        "distance_cm": 407.037841796875,
+        "azimuth_degrees": -128.92376054728248,
+        "elevation_degrees": 3.8132620452045978,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 159,
+          "g": 143,
+          "b": 175
+        },
+        "materials": [
+          "MI_UtilityTrim"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4999.1264912988545,
+            "y": -507.8036254971244,
+            "z": 583.4133921399979
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_581",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_581",
+        "position_cm": {
+          "x": -4744.854845428879,
+          "y": 51.116282253973225,
+          "z": 40.000036
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": -129.99999830282627,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5073.909063931816,
+            "y": -338.3338013177396,
+            "z": 40.00003600000002
+          },
+          "max": {
+            "x": -4737.194381190967,
+            "y": 57.5441815017482,
+            "z": 540.000036
+          },
+          "size_cm": {
+            "x": 336.71468274084873,
+            "y": 395.8779828194878,
+            "z": 500
+          }
+        },
+        "delta_cm": {
+          "x": 64.06790634485878,
+          "y": 309.6051900920043,
+          "z": -256.9029791367187
+        },
+        "relative_to_agent_cm": {
+          "x": 226.96068885789293,
+          "y": 309.6051900920043,
+          "z": -136.35498900255047
+        },
+        "distance_cm": 407.38092041015625,
+        "azimuth_degrees": 53.75616611720548,
+        "elevation_degrees": -19.554982145317876,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 7,
+          "g": 127,
+          "b": 127
+        },
+        "materials": [
+          "MI_TileStack_DarkGray"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Decal_Dirt45_3003",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4910.041643034291,
+            "y": -162.09210077688397,
+            "z": 308.0039183156807
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "SM_Window95_51",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.SM_Window95_51",
+        "position_cm": {
+          "x": -4855.809412260904,
+          "y": -96.55755227299561,
+          "z": 367.8461382414328
+        },
+        "rotation": {
+          "pitch": -90,
+          "yaw": -129.99981760565362,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.507806,
+          "y": 0.551574,
+          "z": 0.769612
+        },
+        "bbox": {
+          "min": {
+            "x": -4902.895304757922,
+            "y": -155.56870801796288,
+            "z": 333.4296981698996
+          },
+          "max": {
+            "x": -4805.272168148291,
+            "y": -40.44240567302077,
+            "z": 402.262578312966
+          },
+          "size_cm": {
+            "x": 97.62313660963082,
+            "y": 115.1263023449421,
+            "z": 68.8328801430664
+          }
+        },
+        "delta_cm": {
+          "x": 115.53589245314379,
+          "y": 351.9944431545082,
+          "z": -179.05687689528594
+        },
+        "relative_to_agent_cm": {
+          "x": 208.3085446215303,
+          "y": 351.9944431545082,
+          "z": -44.91612011402938
+        },
+        "distance_cm": 411.47296142578125,
+        "azimuth_degrees": 59.38316637139216,
+        "elevation_degrees": -6.2668579786124905,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 0,
+          "g": 143,
+          "b": 79
+        },
+        "materials": [
+          "MI_Window01_Gray"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3327",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3327",
+        "position_cm": {
+          "x": -4960.613518,
+          "y": -864.3771533594144,
+          "z": 527.9347430852506
+        },
+        "rotation": {
+          "pitch": 6.97172765740106e-07,
+          "yaw": 89.99999999999982,
+          "roll": 180
+        },
+        "scale": {
+          "x": 1,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -4960.613518,
+            "y": -870.2047195995292,
+            "z": 520.2700034055764
+          },
+          "max": {
+            "x": -4950.344664812439,
+            "y": -858.5495871192995,
+            "z": 535.5994827649248
+          },
+          "size_cm": {
+            "x": 10.268853187561035,
+            "y": 11.655132480229668,
+            "z": 15.329479359348397
+          }
+        },
+        "delta_cm": {
+          "x": 14.140537500030405,
+          "y": -414.37715335941436,
+          "z": -18.968272051468148
+        },
+        "relative_to_agent_cm": {
+          "x": 23.411463730109528,
+          "y": -414.37715335941436,
+          "z": -3.4137239815251537
+        },
+        "distance_cm": 415.052001953125,
+        "azimuth_degrees": -86.76634306361545,
+        "elevation_degrees": -0.4712522157650131,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 63,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -4965.1459790252975,
+            "y": -581.096735381652,
+            "z": 540.9020121334918
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_2680",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_2680",
+        "position_cm": {
+          "x": -4847.389337321786,
+          "y": -786.7744360000002,
+          "z": 768.0856756632826
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.069982,
+          "y": 1.069982,
+          "z": 1.069982
+        },
+        "bbox": {
+          "min": {
+            "x": -4907.029666407113,
+            "y": -786.7744917989003,
+            "z": 715.472319811125
+          },
+          "max": {
+            "x": -4787.749008236459,
+            "y": -786.7744871992973,
+            "z": 820.6990151888104
+          },
+          "size_cm": {
+            "x": 119.28065817065362,
+            "y": 4.59960301668616e-06,
+            "z": 105.22669537768547
+          }
+        },
+        "delta_cm": {
+          "x": 122.23029158446388,
+          "y": -336.77448949909876,
+          "z": 221.18265236324896
+        },
+        "relative_to_agent_cm": {
+          "x": -69.96988384372561,
+          "y": -336.77448949909876,
+          "z": 242.82962183835906
+        },
+        "distance_cm": 421.0451965332031,
+        "azimuth_degrees": -101.7370657453918,
+        "elevation_degrees": 35.220911934591875,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 79,
+          "g": 47,
+          "b": 239
+        },
+        "materials": [
+          "MI_Text02_White"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "SM_Decal_Dirt45_3003",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.SM_Decal_Dirt45_3003",
+        "position_cm": {
+          "x": -4901.739333295304,
+          "y": -152.1979326883997,
+          "z": 335.0907158044875
+        },
+        "rotation": {
+          "pitch": 9.999999999999995e-07,
+          "yaw": -130.00016699999995,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.5992530584335327,
+          "y": 1,
+          "z": 0.800427
+        },
+        "bbox": {
+          "min": {
+            "x": -4992.256885523489,
+            "y": -260.0718262537599,
+            "z": 171.28593416759503
+          },
+          "max": {
+            "x": -4811.221819340898,
+            "y": -44.32391524732405,
+            "z": 335.09075490289604
+          },
+          "size_cm": {
+            "x": 181.03506618259053,
+            "y": 215.74791100643588,
+            "z": 163.804820735301
+          }
+        },
+        "delta_cm": {
+          "x": 67.8802764740567,
+          "y": 297.802129249458,
+          "z": -293.71467060147324
+        },
+        "relative_to_agent_cm": {
+          "x": 255.68623814835277,
+          "y": 297.802129249458,
+          "z": -159.6890330682422
+        },
+        "distance_cm": 423.74774169921875,
+        "azimuth_degrees": 49.35135025727004,
+        "elevation_degrees": -22.138656131795077,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 159,
+          "g": 95,
+          "b": 95
+        },
+        "materials": [
+          "M_Decal01"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3008",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3008",
+        "position_cm": {
+          "x": -5026.640770395869,
+          "y": -775.4420706557892,
+          "z": 255.72903852158717
+        },
+        "rotation": {
+          "pitch": -1.4626902939916708,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.499652624130249,
+          "y": 1.499652624130249,
+          "z": 1.499652624130249
+        },
+        "bbox": {
+          "min": {
+            "x": -5061.178737090511,
+            "y": -775.4421134488455,
+            "z": 209.81510108749183
+          },
+          "max": {
+            "x": -4992.102792555568,
+            "y": -775.4421095081684,
+            "z": 301.64296422591497
+          },
+          "size_cm": {
+            "x": 69.07594453494312,
+            "y": 3.940677061109454e-06,
+            "z": 91.82786313842317
+          }
+        },
+        "delta_cm": {
+          "x": -57.02113591678972,
+          "y": -325.44211147850694,
+          "z": -291.17398248001535
+        },
+        "relative_to_agent_cm": {
+          "x": 165.57106414104592,
+          "y": -325.44211147850694,
+          "z": -246.2111304017651
+        },
+        "distance_cm": 440.393310546875,
+        "azimuth_degrees": -63.03494945327772,
+        "elevation_degrees": -33.99157602084503,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 239,
+          "g": 255,
+          "b": 159
+        },
+        "materials": [
+          "M_Poster"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "StaticMeshActor_3134",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -5026.480463457453,
+            "y": -774.5271883657746,
+            "z": 256.54761870018206
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "SM_Fence7_3165",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.SM_Fence7_3165",
+        "position_cm": {
+          "x": -5073.243861287443,
+          "y": -521.5843514359797,
+          "z": 39.999999980215534
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 49.99999961268167,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.2026005983352661,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5078.611447172437,
+            "y": -526.1103593134524,
+            "z": 39.99997709203194
+          },
+          "max": {
+            "x": -4940.658576294773,
+            "y": -365.4462194252376,
+            "z": 126.69113920140694
+          },
+          "size_cm": {
+            "x": 137.95287087766337,
+            "y": 160.66413988821478,
+            "z": 86.691162109375
+          }
+        },
+        "delta_cm": {
+          "x": -40.0153828273551,
+          "y": 4.221710630655025,
+          "z": -463.5574569899993
+        },
+        "relative_to_agent_cm": {
+          "x": 299.4894705918384,
+          "y": 4.221710630655025,
+          "z": -356.079771678307
+        },
+        "distance_cm": 465.3005065917969,
+        "azimuth_degrees": 0.8076082988042524,
+        "elevation_degrees": -49.93087420666223,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 159,
+          "g": 159,
+          "b": 15
+        },
+        "materials": [
+          "M_RoadFences_Master_YellowAll"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_3334",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_3334",
+        "position_cm": {
+          "x": -5376.750832871405,
+          "y": -775.8786065270814,
+          "z": 328.078861
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.5300438404083252,
+          "y": 1,
+          "z": 1
+        },
+        "bbox": {
+          "min": {
+            "x": -5376.750832871405,
+            "y": -775.5284219672593,
+            "z": 308.81014609521486
+          },
+          "max": {
+            "x": -5070.74206478974,
+            "y": -771.1092927148255,
+            "z": 333.491027595459
+          },
+          "size_cm": {
+            "x": 306.00876808166504,
+            "y": 4.419129252433777,
+            "z": 24.68088150024414
+          }
+        },
+        "delta_cm": {
+          "x": -254.12681992432226,
+          "y": -323.3188573410424,
+          "z": -225.75242829138182
+        },
+        "relative_to_agent_cm": {
+          "x": -20.063726800147606,
+          "y": -323.3188573410424,
+          "z": -339.32587044195947
+        },
+        "distance_cm": 469.12652587890625,
+        "azimuth_degrees": -93.55096717185144,
+        "elevation_degrees": -46.328789871123114,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 31,
+          "g": 79,
+          "b": 7
+        },
+        "materials": [
+          "MI_StreetTrim_MatteWhite"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -5060.747442795356,
+            "y": -565.9395166058694,
+            "z": 465.9500276618942
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_1173",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_1173",
+        "position_cm": {
+          "x": -4847.389338512136,
+          "y": -786.7744358223852,
+          "z": 860.7825222554965
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0699821710586548,
+          "y": 1.0699821710586548,
+          "z": 1.0699821710586548
+        },
+        "bbox": {
+          "min": {
+            "x": -4907.029677132198,
+            "y": -786.7744916986981,
+            "z": 806.398395948252
+          },
+          "max": {
+            "x": -4787.748999892075,
+            "y": -786.7744869442868,
+            "z": 915.1666322361087
+          },
+          "size_cm": {
+            "x": 119.28067724012362,
+            "y": 4.7544112931063864e-06,
+            "z": 108.76823628785678
+          }
+        },
+        "delta_cm": {
+          "x": 122.23029039411358,
+          "y": -336.7744893214924,
+          "z": 313.8794989554616
+        },
+        "relative_to_agent_cm": {
+          "x": -135.51645310660888,
+          "y": -336.7744893214924,
+          "z": 308.37619021540115
+        },
+        "distance_cm": 476.3167419433594,
+        "azimuth_degrees": -111.91961980694046,
+        "elevation_degrees": 40.347236544442445,
+        "line_of_sight": true,
+        "annotation_rgb": {
+          "r": 143,
+          "g": 191,
+          "b": 223
+        },
+        "materials": [
+          "MI_Text02_White"
+        ],
+        "tags": [],
+        "blocked_by": null,
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      },
+      {
+        "name": "StaticMeshActor_1403",
+        "class": "StaticMeshActor",
+        "class_path": "/Script/Engine.StaticMeshActor",
+        "object_path": "/Game/TokyoStylizedEnvironment/Maps/Tokyo.Tokyo:PersistentLevel.StaticMeshActor_1403",
+        "position_cm": {
+          "x": -5281.900775796269,
+          "y": -778.1847930000008,
+          "z": 751.1747829548758
+        },
+        "rotation": {
+          "pitch": 0,
+          "yaw": 0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.534922,
+          "y": 0.534922,
+          "z": 0.534922
+        },
+        "bbox": {
+          "min": {
+            "x": -5298.597123403508,
+            "y": -778.1848052433938,
+            "z": 728.2608159728812
+          },
+          "max": {
+            "x": -5265.20442818903,
+            "y": -753.7498252314003,
+            "z": 764.6927008613242
+          },
+          "size_cm": {
+            "x": 33.3926952144775,
+            "y": 24.434980011993503,
+            "z": 36.43188488844294
+          }
+        },
+        "delta_cm": {
+          "x": -312.28114689001904,
+          "y": -315.9673152373971,
+          "z": 199.57374328038395
+        },
+        "relative_to_agent_cm": {
+          "x": -361.9360643078576,
+          "y": -315.9673152373971,
+          "z": -79.69616718028956
+        },
+        "distance_cm": 487.0159606933594,
+        "azimuth_degrees": -138.87929834469492,
+        "elevation_degrees": -9.418342966389908,
+        "line_of_sight": false,
+        "annotation_rgb": {
+          "r": 223,
+          "g": 223,
+          "b": 175
+        },
+        "materials": [
+          "MI_UtilityTrim"
+        ],
+        "tags": [],
+        "blocked_by": {
+          "actor": "SM_Tree5_1100",
+          "class": "/Script/Engine.StaticMeshActor",
+          "component": "StaticMeshComponent0",
+          "point_cm": {
+            "x": -5022.917615378072,
+            "y": -503.9271161924852,
+            "z": 580.9648814242628
+          }
+        },
+        "nav": {
+          "available": true,
+          "agent_on_navmesh": false,
+          "target_on_navmesh": false,
+          "reachable": false,
+          "reason": "target_not_on_navmesh"
+        }
+      }
+    ],
+    "rays": [
+      {
+        "yaw_degrees": 0,
+        "direction": {
+          "x": 1,
+          "y": 0,
+          "z": 0
+        },
+        "hit": false,
+        "distance_cm": 0
+      },
+      {
+        "yaw_degrees": 44.999996185302734,
+        "direction": {
+          "x": 0.7071068282650277,
+          "y": 0.7071067341080643,
+          "z": 0
+        },
+        "hit": true,
+        "actor": "SM_Tree5_0",
+        "actor_class": "/Script/Engine.StaticMeshActor",
+        "component": "StaticMeshComponent0",
+        "distance_cm": 1198.4849853515625,
+        "point_cm": {
+          "x": -4122.16277312749,
+          "y": 397.4567613072453,
+          "z": 546.9030152382812
+        },
+        "normal": {
+          "x": 0.1640653041429504,
+          "y": -0.766440886757391,
+          "z": -0.6210080056513161
+        }
+      },
+      {
+        "yaw_degrees": 89.99999237060547,
+        "direction": {
+          "x": 1.331580544831135e-07,
+          "y": 0.999999999999991,
+          "z": 0
+        },
+        "hit": true,
+        "actor": "StaticMeshActor_2823",
+        "actor_class": "/Script/Engine.StaticMeshActor",
+        "component": "StaticMeshComponent0",
+        "distance_cm": 217.69485473632812,
+        "point_cm": {
+          "x": -4969.61956468475,
+          "y": -232.30510576085163,
+          "z": 546.9030151367188
+        },
+        "normal": {
+          "x": 0.766044492515429,
+          "y": -0.6427875508181368,
+          "z": 0
+        }
+      },
+      {
+        "yaw_degrees": 134.99998474121094,
+        "direction": {
+          "x": -0.7071065928725957,
+          "y": 0.7071069695004493,
+          "z": 0
+        },
+        "hit": true,
+        "actor": "SM_Decal_Dirt45_1779",
+        "actor_class": "/Script/Engine.StaticMeshActor",
+        "component": "StaticMeshComponent0",
+        "distance_cm": 139.95753479003906,
+        "point_cm": {
+          "x": -5068.584535937794,
+          "y": -351.0350417647504,
+          "z": 546.9030156109953
+        },
+        "normal": {
+          "x": 0.7660425467045268,
+          "y": -0.6427898697385016,
+          "z": -5.4610078853253976e-08
+        }
+      },
+      {
+        "yaw_degrees": 179.99998474121094,
+        "direction": {
+          "x": -0.9999999999999645,
+          "y": 2.6631610884375994e-07,
+          "z": 0
+        },
+        "hit": true,
+        "actor": "SM_Decal_Dirt45_1779",
+        "actor_class": "/Script/Engine.StaticMeshActor",
+        "component": "StaticMeshComponent0",
+        "distance_cm": 182.00682067871094,
+        "point_cm": {
+          "x": -5151.626442834306,
+          "y": -449.9999396840118,
+          "z": 546.903017865783
+        },
+        "normal": {
+          "x": 0.7660425467045262,
+          "y": -0.6427898697385023,
+          "z": -5.4610071747826685e-08
+        }
+      },
+      {
+        "yaw_degrees": 224.99998474121094,
+        "direction": {
+          "x": -0.707106969500449,
+          "y": -0.707106592872596,
+          "z": 0
+        },
+        "hit": true,
+        "actor": "SM_Tree5_1100",
+        "actor_class": "/Script/Engine.StaticMeshActor",
+        "component": "StaticMeshComponent0",
+        "distance_cm": 185.2152099609375,
+        "point_cm": {
+          "x": -5100.586593678609,
+          "y": -580.9668950151523,
+          "z": 546.9030151367188
+        },
+        "normal": {
+          "x": 0.7379708982210315,
+          "y": 0.47811050709635805,
+          "z": 0.47624499617624055
+        }
+      },
+      {
+        "yaw_degrees": 269.9999694824219,
+        "direction": {
+          "x": -5.326322185756793e-07,
+          "y": -0.9999999999998581,
+          "z": 0
+        },
+        "hit": true,
+        "actor": "SM_Tree5_1100",
+        "actor_class": "/Script/Engine.StaticMeshActor",
+        "component": "StaticMeshComponent0",
+        "distance_cm": 131.99559020996094,
+        "point_cm": {
+          "x": -4969.619699211354,
+          "y": -581.9955891353804,
+          "z": 546.9030151367188
+        },
+        "normal": {
+          "x": 0.3902707807235838,
+          "y": 0.8223126389144557,
+          "z": 0.4141142856687613
+        }
+      },
+      {
+        "yaw_degrees": 314.9999694824219,
+        "direction": {
+          "x": 0.7071064045585936,
+          "y": -0.7071071578143009,
+          "z": 0
+        },
+        "hit": false,
+        "distance_cm": 0
+      }
+    ],
+    "ray_channel": "Visibility",
+    "units": "world vectors and distances are centimeters; angles are degrees",
+    "occupancy": {
+      "available": true,
+      "format": "numpy.bool",
+      "axis_order": "x,y_up,z",
+      "coordinate_frame": "grid-local meters; origin_cm defaults to UE world origin",
+      "data_command": "vget /scene/occupancy [npy|filename.npy] [lingo_vis|lingo_train] [bounds|mesh]",
+      "shared_command": "vget /scene/occupancy_shared [lingo_vis|lingo_train] [bounds|mesh]",
+      "spec_command": "vget /scene/occupancy/spec [lingo_vis|lingo_train] [bounds|mesh]",
+      "methods": [
+        "bounds",
+        "mesh"
+      ],
+      "profiles": [
+        {
+          "name": "lingo_vis",
+          "min_m": {
+            "x": -4,
+            "y": 0,
+            "z": -6
+          },
+          "max_m": {
+            "x": 4,
+            "y": 2,
+            "z": 6
+          },
+          "shape": {
+            "x": 400,
+            "y": 100,
+            "z": 600
+          }
+        },
+        {
+          "name": "lingo_train",
+          "min_m": {
+            "x": -3,
+            "y": 0,
+            "z": -4
+          },
+          "max_m": {
+            "x": 3,
+            "y": 2,
+            "z": 4
+          },
+          "shape": {
+            "x": 300,
+            "y": 100,
+            "z": 400
+          }
+        }
+      ]
+    }
+  },
+  "cleanup": {
+    "performed": false,
+    "reason": "Generated actors intentionally remain in the running demo scene until the process exits."
+  },
+  "audit_events": [
+    {
+      "sequence": 1,
+      "tool": "camera.get_pose",
+      "requested_at": "2026-08-13T09:31:56.465451+00:00",
+      "completed_at": "2026-08-13T09:31:56.479910+00:00"
+    },
+    {
+      "sequence": 2,
+      "tool": "perception.snapshot",
+      "requested_at": "2026-08-13T09:31:56.481123+00:00",
+      "completed_at": "2026-08-13T09:31:56.504667+00:00"
+    },
+    {
+      "sequence": 3,
+      "tool": "scene.raycast_down",
+      "requested_at": "2026-08-13T09:31:56.506564+00:00",
+      "completed_at": "2026-08-13T09:31:56.514761+00:00"
+    },
+    {
+      "sequence": 4,
+      "tool": "camera.set_view_preset",
+      "requested_at": "2026-08-13T09:31:56.515443+00:00",
+      "completed_at": "2026-08-13T09:31:56.530524+00:00"
+    },
+    {
+      "sequence": 5,
+      "tool": "scene.check_region",
+      "requested_at": "2026-08-13T09:31:56.531454+00:00",
+      "completed_at": "2026-08-13T09:31:56.548618+00:00"
+    },
+    {
+      "sequence": 6,
+      "tool": "scene.capture_view",
+      "requested_at": "2026-08-13T09:31:56.549943+00:00",
+      "completed_at": "2026-08-13T09:31:56.752788+00:00"
+    },
+    {
+      "sequence": 7,
+      "tool": "assets.search",
+      "requested_at": "2026-08-13T09:31:56.753322+00:00",
+      "completed_at": "2026-08-13T09:31:57.791666+00:00"
+    },
+    {
+      "sequence": 8,
+      "tool": "assets.search",
+      "requested_at": "2026-08-13T09:31:57.792180+00:00",
+      "completed_at": "2026-08-13T09:31:57.801573+00:00"
+    },
+    {
+      "sequence": 9,
+      "tool": "assets.search",
+      "requested_at": "2026-08-13T09:31:57.802097+00:00",
+      "completed_at": "2026-08-13T09:31:57.817945+00:00"
+    },
+    {
+      "sequence": 10,
+      "tool": "assets.get_bounds",
+      "requested_at": "2026-08-13T09:31:57.819115+00:00",
+      "completed_at": "2026-08-13T09:31:57.852991+00:00"
+    },
+    {
+      "sequence": 11,
+      "tool": "spawn.from_asset",
+      "requested_at": "2026-08-13T09:31:57.854006+00:00",
+      "completed_at": "2026-08-13T09:31:57.873001+00:00"
+    },
+    {
+      "sequence": 12,
+      "tool": "spawn.validate_placement",
+      "requested_at": "2026-08-13T09:31:57.873908+00:00",
+      "completed_at": "2026-08-13T09:31:57.882290+00:00"
+    },
+    {
+      "sequence": 13,
+      "tool": "assets.get_bounds",
+      "requested_at": "2026-08-13T09:31:57.883236+00:00",
+      "completed_at": "2026-08-13T09:31:57.927861+00:00"
+    },
+    {
+      "sequence": 14,
+      "tool": "spawn.from_asset",
+      "requested_at": "2026-08-13T09:31:57.928603+00:00",
+      "completed_at": "2026-08-13T09:31:57.948815+00:00"
+    },
+    {
+      "sequence": 15,
+      "tool": "spawn.validate_placement",
+      "requested_at": "2026-08-13T09:31:57.949531+00:00",
+      "completed_at": "2026-08-13T09:31:57.959495+00:00"
+    },
+    {
+      "sequence": 16,
+      "tool": "assets.get_bounds",
+      "requested_at": "2026-08-13T09:31:57.960143+00:00",
+      "completed_at": "2026-08-13T09:31:57.975897+00:00"
+    },
+    {
+      "sequence": 17,
+      "tool": "spawn.from_asset",
+      "requested_at": "2026-08-13T09:31:57.976641+00:00",
+      "completed_at": "2026-08-13T09:31:58.001103+00:00"
+    },
+    {
+      "sequence": 18,
+      "tool": "spawn.validate_placement",
+      "requested_at": "2026-08-13T09:31:58.002276+00:00",
+      "completed_at": "2026-08-13T09:31:58.013818+00:00"
+    },
+    {
+      "sequence": 19,
+      "tool": "camera.set_view_preset",
+      "requested_at": "2026-08-13T09:31:58.014533+00:00",
+      "completed_at": "2026-08-13T09:31:58.029074+00:00"
+    },
+    {
+      "sequence": 20,
+      "tool": "scene.capture_view",
+      "requested_at": "2026-08-13T09:31:58.029628+00:00",
+      "completed_at": "2026-08-13T09:31:58.233366+00:00"
+    },
+    {
+      "sequence": 21,
+      "tool": "camera.set_view_preset",
+      "requested_at": "2026-08-13T09:31:58.233863+00:00",
+      "completed_at": "2026-08-13T09:31:58.271323+00:00"
+    },
+    {
+      "sequence": 22,
+      "tool": "scene.capture_view",
+      "requested_at": "2026-08-13T09:31:58.271968+00:00",
+      "completed_at": "2026-08-13T09:31:58.480684+00:00"
+    },
+    {
+      "sequence": 23,
+      "tool": "camera.set_view_preset",
+      "requested_at": "2026-08-13T09:31:58.481277+00:00",
+      "completed_at": "2026-08-13T09:31:58.491392+00:00"
+    },
+    {
+      "sequence": 24,
+      "tool": "scene.capture_view",
+      "requested_at": "2026-08-13T09:31:58.492277+00:00",
+      "completed_at": "2026-08-13T09:31:58.695747+00:00"
+    },
+    {
+      "sequence": 25,
+      "tool": "camera.set_view_preset",
+      "requested_at": "2026-08-13T09:31:58.696489+00:00",
+      "completed_at": "2026-08-13T09:31:58.710681+00:00"
+    },
+    {
+      "sequence": 26,
+      "tool": "scene.capture_view",
+      "requested_at": "2026-08-13T09:31:58.711406+00:00",
+      "completed_at": "2026-08-13T09:31:58.902500+00:00"
+    },
+    {
+      "sequence": 27,
+      "tool": "camera.set_view_preset",
+      "requested_at": "2026-08-13T09:31:58.903321+00:00",
+      "completed_at": "2026-08-13T09:31:58.912395+00:00"
+    },
+    {
+      "sequence": 28,
+      "tool": "scene.capture_view",
+      "requested_at": "2026-08-13T09:31:58.913057+00:00",
+      "completed_at": "2026-08-13T09:31:59.111032+00:00"
+    },
+    {
+      "sequence": 29,
+      "tool": "camera.set_view_preset",
+      "requested_at": "2026-08-13T09:31:59.111646+00:00",
+      "completed_at": "2026-08-13T09:31:59.121286+00:00"
+    },
+    {
+      "sequence": 30,
+      "tool": "scene.capture_view",
+      "requested_at": "2026-08-13T09:31:59.122019+00:00",
+      "completed_at": "2026-08-13T09:31:59.319244+00:00"
+    },
+    {
+      "sequence": 31,
+      "tool": "perception.snapshot",
+      "requested_at": "2026-08-13T09:31:59.319927+00:00",
+      "completed_at": "2026-08-13T09:31:59.341754+00:00"
+    }
+  ],
+  "build_identity": {
+    "closed_repo_head_before_changes": "ec02ef0cd16fa7040817079c01c75aad6405cf3d",
+    "public_repo_head_before_changes": "992339f2b87955b72dc47e954b1dfb198b1046d9"
+  }
+}

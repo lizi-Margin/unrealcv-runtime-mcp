@@ -24,7 +24,7 @@ Treat the live `tools` result as authoritative. Expected mature-route tools:
 | `spawn.validate_placement` | Verify overlap and ground contact | `actor` |
 | `spawn.get_overlaps` | Diagnose an invalid placement | `actor` |
 | `spawn.destroy` | Roll back a workflow actor | `actor` |
-| `scene.capture_view` | Return an MCP image | `camera_id`, `mode=lit` |
+| `scene.capture_view` | Return a high-quality lit MCP image without BaseCameraSensor | `camera_id`, `source=mqrc|viewport`, `width`, `height` |
 
 The raw compatibility commands include:
 
@@ -105,7 +105,24 @@ Return exactly these six final views:
 Use `camera.set_view_preset` for the first five. For `hero_view`, frame the main
 subject with `camera.frame_bounds` using the most informative diagonal preset,
 then adjust distance if needed. Capture each with `scene.capture_view` in `lit`
-mode.
+quality using `source=mqrc`, `width=640`, and `height=360` by default. Never
+request more than `width=1280` and `height=720`. Use
+`source=viewport` only when the main viewport backbuffer is the intended
+evidence source. Normal, object-mask, and other BaseCameraSensor-backed modes
+are not valid evaluation images.
+
+For every returned capture require all of the following metadata before visual
+inspection:
+
+- `render_source` is `mqrc` or `main_viewport_backbuffer`;
+- `uses_base_camera_sensor` is exactly `false`;
+- `renderer_class` names `MovieQualityRenderComponent` or
+  `MainViewportRenderComponent` as appropriate;
+- `actual_width` and `actual_height` equal the requested resolution;
+- `png_compression_quality` is `100` and `bytes` is nonzero.
+
+Reject and recapture any image that lacks this provenance even if its PNG bytes
+are otherwise valid.
 
 For every image check:
 

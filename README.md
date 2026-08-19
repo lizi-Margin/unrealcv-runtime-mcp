@@ -15,6 +15,11 @@ settle assets without overlaps, then return an auditable six-view result. This
 is a real Runtime MCP run in the Tokyo environment: a bench, table, and traffic
 cone were added to a street-side rest point and validated before capture.
 
+The [scene-generation video](artifacts/runtime_mcp_scene_generation.mp4) shows
+the same workflow as a runtime sequence: the agent creates the scene, adds a
+character asset, and moves the character to the generated bench in response to
+a natural-language instruction.
+
 ![Generated street-side rest point](examples/scene_generation_demo/images/06_hero_view.png)
 
 | Top-down evaluation | X+ diagonal evaluation | X- diagonal evaluation |
@@ -33,6 +38,7 @@ Reproduce the demo against a running supported environment:
 
 ```powershell
 python .\examples\scene_generation_demo\run_demo.py
+python .\examples\scene_generation_demo\record_scene_generation_video.py
 ```
 
 ## Quick start

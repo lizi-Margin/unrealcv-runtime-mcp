@@ -65,7 +65,17 @@ def main() -> int:
             for role, asset_path, location in planned:
                 actor_name = f"MCPVideo_{role}"
                 call(client, "spawn.from_asset", {"asset_path": asset_path, "location": location, "name": actor_name, "settle": "bounds", "reject_overlaps": 0})
-                call(client, "spawn.validate_placement", {"actor": actor_name})
+                try:
+                    call(client, "spawn.validate_placement", {"actor": actor_name})
+                except RuntimeError:
+                    if role != "character":
+                        raise
+                    # The packaged BP_Character has an oversized root bounds
+                    # proxy. Keep the native actor for the demo, but retain
+                    # the failed validation in the audit sequence.
+                    capture(client, frame_dir / f"frame_{len(list(frame_dir.glob('*.png'))):05d}.png", "BP_Character spawned; native bounds proxy reported overlap")
+                    warmup(client, 4)
+                    continue
                 warmup(client, 4)
                 capture(client, frame_dir / f"frame_{len(list(frame_dir.glob('*.png'))):05d}.png", f"MCP tool call: spawn and validate {role}")
 

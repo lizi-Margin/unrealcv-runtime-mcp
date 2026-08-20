@@ -60,7 +60,7 @@ def main() -> int:
             planned = [
                 ("bench", "/Game/TokyoStylizedEnvironment/Meshes/Unique_Props/SM_Bench.SM_Bench", {"x": -4700, "y": -500, "z": ground_z + 160}),
                 ("table", "/Game/RoofProps/Geometry/Props/SM_table.SM_table", {"x": -4400, "y": -500, "z": ground_z + 160}),
-                ("character", "/Game/Characters/BP_Character.BP_Character", {"x": -5000, "y": -700, "z": ground_z + 100}),
+                ("character", "/Game/MetaHumans/BP_Character.BP_Character", {"x": -5000, "y": -700, "z": ground_z + 100}),
             ]
             for role, asset_path, location in planned:
                 actor_name = f"MCPVideo_{role}"

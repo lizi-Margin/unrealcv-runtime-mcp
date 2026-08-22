@@ -85,6 +85,33 @@ after applying the ten appearance variants.
 **Prompt:** [View the original prompt](examples/change_character_appearance/prompt.md) &middot;
 **Workflow:** [View the execution details](examples/change_character_appearance/procedure.md)
 
+## Scene Generation In Action
+
+Given a natural-language brief and a world coordinate, an agent can raycast to
+the ground, inspect native scene state, search assets and bounds, spawn and
+settle assets without overlaps, then return an auditable six-view result. This
+is a real Runtime MCP run in the Tokyo environment: a bench, table, and traffic
+cone were added to a street-side rest point and validated before capture.
+
+The [scene-generation video](artifacts/runtime_mcp_scene_generation.mp4) shows
+the same workflow as a runtime sequence: the agent creates the scene, adds a
+character asset, and moves the character to the generated bench in response to
+a natural-language instruction.
+
+![Generated street-side rest point](examples/scene_generation_demo/images/06_hero_view.png)
+
+| Top-down evaluation | X+ diagonal evaluation | X- diagonal evaluation |
+| --- | --- | --- |
+| ![Top-down evaluation](examples/scene_generation_demo/images/01_top_down.png) | ![X positive diagonal evaluation](examples/scene_generation_demo/images/02_x_positive_down_45.png) | ![X negative diagonal evaluation](examples/scene_generation_demo/images/03_x_negative_down_45.png) |
+| Y+ diagonal evaluation | Y- diagonal evaluation | |
+| ![Y positive diagonal evaluation](examples/scene_generation_demo/images/04_y_positive_down_45.png) | ![Y negative diagonal evaluation](examples/scene_generation_demo/images/05_y_negative_down_45.png) | |
+
+The full tool audit, asset paths, bounds, ground hit, placement validation, and
+capture provenance are recorded in
+[`examples/scene_generation_demo/manifest.json`](examples/scene_generation_demo/manifest.json).
+Captures use MQRC at **640x360** by default, capped at **1280x720**, so visual
+checks remain useful without needlessly expanding an agent's image context.
+
 ## Get Started
 
 ### Universal configuration

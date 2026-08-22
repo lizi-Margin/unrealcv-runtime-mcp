@@ -1,0 +1,1 @@
+Use the scene-perception and capture views in all directions, then summarize the entire map in one concise caption.

@@ -1,0 +1,1 @@
+A vibrant, compact stylized Tokyo district of dense mid-rise buildings, neon signage, elevated structures, narrow streets and sidewalks, all threaded with abundant pink cherry blossoms beneath a bright blue sky.

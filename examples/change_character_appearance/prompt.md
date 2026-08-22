@@ -1,0 +1,1 @@
+Use UnrealCV MCP，place a character under camera, and switch 10 appearance of the character with BP func, take a photo for each of them.

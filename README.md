@@ -7,65 +7,55 @@ The Runtime MCP server is currently distributed with supported UnrealZoo
 environments and is tested there first. This repository does not contain the
 server's Unreal Engine C++ implementation.
 
-## Scene Generation In Action
+## Examples
 
-Given a natural-language brief and a world coordinate, an agent can raycast to
-the ground, inspect native scene state, search assets and bounds, spawn and
-settle assets without overlaps, then return an auditable six-view result. This
-is a real Runtime MCP run in the Tokyo environment: a bench, table, and traffic
-cone were added to a street-side rest point and validated before capture.
 
-The [scene-generation video](artifacts/runtime_mcp_scene_generation.mp4) shows
-the same workflow as a runtime sequence: the agent creates the scene, adds a
-character asset, and moves the character to the generated bench in response to
-a natural-language instruction.
+## Get Started
 
-![Generated street-side rest point](examples/scene_generation_demo/images/06_hero_view.png)
-
-| Top-down evaluation | X+ diagonal evaluation | X- diagonal evaluation |
-| --- | --- | --- |
-| ![Top-down evaluation](examples/scene_generation_demo/images/01_top_down.png) | ![X positive diagonal evaluation](examples/scene_generation_demo/images/02_x_positive_down_45.png) | ![X negative diagonal evaluation](examples/scene_generation_demo/images/03_x_negative_down_45.png) |
-| Y+ diagonal evaluation | Y- diagonal evaluation | |
-| ![Y positive diagonal evaluation](examples/scene_generation_demo/images/04_y_positive_down_45.png) | ![Y negative diagonal evaluation](examples/scene_generation_demo/images/05_y_negative_down_45.png) | |
-
-The full tool audit, asset paths, bounds, ground hit, placement validation, and
-capture provenance are recorded in
-[`examples/scene_generation_demo/manifest.json`](examples/scene_generation_demo/manifest.json).
-Captures use MQRC at **640x360** by default, capped at **1280x720**, so visual
-checks remain useful without needlessly expanding an agent's image context.
-
-Reproduce the demo against a running supported environment:
-
-```powershell
-python .\examples\scene_generation_demo\run_demo.py
-python .\examples\scene_generation_demo\record_scene_generation_video.py
+Universal configuration
+write this to a .mcp.json local file or your coding agent's config file.
+```json
+{
+  "mcpServers": {
+    "unrealcv": {
+      "type": "http",
+      "url": "http://127.0.0.1:29998/mcp",
+      "disabled": false
+    }
+  }
+}
 ```
 
-## Quick start
-
-Start an UnrealZoo environment that provides Runtime MCP, then run:
-
-```powershell
-python .\examples\runtime_mcp_client.py --host 127.0.0.1 --port 29998 tools
-python .\examples\runtime_mcp_client.py call scene.overview --arguments '{"radius":2500,"max_actors":20}'
-python .\examples\runtime_mcp_client.py call perception.snapshot --arguments '{"radius_cm":2500,"max_objects":24,"max_rays":8}'
-python .\examples\runtime_mcp_client.py exec "vget /unrealcv/status"
+Codex configuration
+write this to ~/.codex/config.toml
+```toml
+[mcp_servers.unrealcv]
+url = "http://127.0.0.1:29998/mcp"
+enabled = true
 ```
 
-The client uses only the Python standard library. It implements the framed TCP
-transport used by UnrealCV and the Runtime MCP JSON-RPC methods `initialize`,
-`ping`, `tools/list`, and `tools/call`.
+## 支持的协议
 
-## Agent skill
+ 层级            当前支持
+━━━━━━━━━━━━━━  ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ 应用协议        Model Context Protocol（MCP）
+──────────────  ────────────────────────────────────────────────
+ MCP 版本        2025-11-25、2025-06-18、2025-03-26、2024-11-05
+──────────────  ────────────────────────────────────────────────
+ RPC             JSON-RPC 2.0
+──────────────  ────────────────────────────────────────────────
+ 传输            Streamable HTTP 风格
+──────────────  ────────────────────────────────────────────────
+ 普通响应        application/json
+──────────────  ────────────────────────────────────────────────
+ 流式响应格式    text/event-stream，SSE message event
+──────────────  ────────────────────────────────────────────────
+ 会话            Mcp-Session-Id
+──────────────  ────────────────────────────────────────────────
+ 版本请求头      Mcp-Protocol-Version
+──────────────  ────────────────────────────────────────────────
+ 默认端点        http://127.0.0.1:29998/mcp
 
-The reusable Codex skill is in
-[`skills/unrealcv-runtime-mcp`](skills/unrealcv-runtime-mcp/SKILL.md). Install
-that directory in your Codex skills folder, then invoke
-`$unrealcv-runtime-mcp` for runtime inspection and command execution.
-
-Use [`skills/unrealcv-generate-scene`](skills/unrealcv-generate-scene/SKILL.md)
-to generate an asset-backed scene from a description and world coordinate,
-prevent generated-object overlap, and return a six-view visual evaluation.
 
 ## Availability
 

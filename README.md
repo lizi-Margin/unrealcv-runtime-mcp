@@ -27,13 +27,15 @@ third-person composition.
 | <img src="examples/complex_scene_navigation/04_detached_camera_front_framing.png" width="100%" alt="Detached camera testing a front framing"> | <img src="examples/complex_scene_navigation/05_detached_camera_left_framing.png" width="100%" alt="Detached camera testing a left framing"> | <img src="examples/complex_scene_navigation/06_detached_camera_right_framing.png" width="100%" alt="Detached camera testing a right framing"> | <img src="examples/complex_scene_navigation/07_final_character_and_sakura.png" width="100%" alt="Final capture containing the character and sakura tree"> |
 | Camera detached and moved to the front | Composition evaluated from the left | Composition evaluated from the right | Character and sakura framed together |
 
-**Prompt:** [View the original prompt](examples/complex_scene_navigation/prompt.md) ·
+**Prompt:** [View the original prompt](examples/complex_scene_navigation/prompt.md) &middot;
 **Workflow:** [View the execution details](examples/complex_scene_navigation/procedure.md)
 
 ### Scene Captioning
 
-The agent combines structured scene perception with six directional captures
-to summarize the complete environment.
+The agent uses UnrealCV Runtime MCP tools to perceive the scene, rotate the
+camera, and capture views in six directions. The six images below are the
+resulting north, east, south, west, upward, and downward observations used to
+produce a caption of the complete environment.
 
 [<img src="examples/scene_caption/MCP_Scene_Caption_480x270.gif" width="480" alt="Multi-direction scene captioning with UnrealCV Runtime MCP">](examples/scene_caption/MCP_Scene_Caption_1080x576.gif)
 
@@ -49,24 +51,38 @@ to summarize the complete environment.
 > neon signage, elevated structures, narrow streets and sidewalks, all
 > threaded with abundant pink cherry blossoms beneath a bright blue sky.
 
-**Prompt:** [View the original prompt](examples/scene_caption/prompt.md) ·
-**Workflow:** [View the captioning process](examples/scene_caption/procedure.md) ·
+**Prompt:** [View the original prompt](examples/scene_caption/prompt.md) &middot;
+**Workflow:** [View the captioning process](examples/scene_caption/procedure.md) &middot;
 **Result:** [View the caption](examples/scene_caption/result.md)
 
 ### Blueprint Function Calling (Change Character Appearance)
 
-The agent discovers the character's reflected Blueprint API, calls
-`set_app(NewParam)`, and captures the available appearance variants.
+The agent uses UnrealCV Runtime MCP tools to discover the character's Blueprint API, call `set_app(NewParam)` to switch its appearance,
+and photograph each result. The ten images below were captured by the agent
+after applying the ten appearance variants.
 
 [<img src="examples/change_character_appearance/MCP_set_app_480x270.gif" width="480" alt="Changing character appearances through a Blueprint function">](examples/change_character_appearance/MCP_set_app_1080x576.gif)
 
-| Appearance | Appearance | Appearance | Appearance |
-|:---:|:---:|:---:|:---:|
-| <img src="examples/change_character_appearance/scene_capture_camera0_02361BD7497A7A2B.png" width="100%" alt="Captured character appearance"> | <img src="examples/change_character_appearance/scene_capture_camera0_0AFAD5F74A646BBB.png" width="100%" alt="Captured character appearance"> | <img src="examples/change_character_appearance/scene_capture_camera0_1770029B466F96B5.png" width="100%" alt="Captured character appearance"> | <img src="examples/change_character_appearance/scene_capture_camera0_220DDDD84A4CE6B4.png" width="100%" alt="Captured character appearance"> |
-| <img src="examples/change_character_appearance/scene_capture_camera0_2666930E4792C594.png" width="100%" alt="Captured character appearance"> | <img src="examples/change_character_appearance/scene_capture_camera0_288557AF4FE4C721.png" width="100%" alt="Captured character appearance"> | <img src="examples/change_character_appearance/scene_capture_camera0_752B949D4BE1825E.png" width="100%" alt="Captured character appearance"> | <img src="examples/change_character_appearance/scene_capture_camera0_91C39BDB47E3D6B2.png" width="100%" alt="Captured character appearance"> |
-| <img src="examples/change_character_appearance/scene_capture_camera0_BD21E84447B2618F.png" width="100%" alt="Captured character appearance"> | <img src="examples/change_character_appearance/scene_capture_camera0_EDE9EA1E4A5D8B99.png" width="100%" alt="Captured character appearance"> |  |  |
+<table>
+  <tr>
+    <td width="25%"><img src="examples/change_character_appearance/scene_capture_camera0_02361BD7497A7A2B.png" width="100%" alt="Captured character appearance 1"></td>
+    <td width="25%"><img src="examples/change_character_appearance/scene_capture_camera0_0AFAD5F74A646BBB.png" width="100%" alt="Captured character appearance 2"></td>
+    <td width="25%"><img src="examples/change_character_appearance/scene_capture_camera0_1770029B466F96B5.png" width="100%" alt="Captured character appearance 3"></td>
+    <td width="25%"><img src="examples/change_character_appearance/scene_capture_camera0_220DDDD84A4CE6B4.png" width="100%" alt="Captured character appearance 4"></td>
+  </tr>
+  <tr>
+    <td><img src="examples/change_character_appearance/scene_capture_camera0_2666930E4792C594.png" width="100%" alt="Captured character appearance 5"></td>
+    <td><img src="examples/change_character_appearance/scene_capture_camera0_288557AF4FE4C721.png" width="100%" alt="Captured character appearance 6"></td>
+    <td><img src="examples/change_character_appearance/scene_capture_camera0_752B949D4BE1825E.png" width="100%" alt="Captured character appearance 7"></td>
+    <td><img src="examples/change_character_appearance/scene_capture_camera0_91C39BDB47E3D6B2.png" width="100%" alt="Captured character appearance 8"></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center"><img src="examples/change_character_appearance/scene_capture_camera0_BD21E84447B2618F.png" width="50%" alt="Captured character appearance 9"></td>
+    <td colspan="2" align="center"><img src="examples/change_character_appearance/scene_capture_camera0_EDE9EA1E4A5D8B99.png" width="50%" alt="Captured character appearance 10"></td>
+  </tr>
+</table>
 
-**Prompt:** [View the original prompt](examples/change_character_appearance/prompt.md) ·
+**Prompt:** [View the original prompt](examples/change_character_appearance/prompt.md) &middot;
 **Workflow:** [View the execution details](examples/change_character_appearance/procedure.md)
 
 ## Get Started
